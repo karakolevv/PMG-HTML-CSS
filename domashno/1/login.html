@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+</head>
+<body>
+    <h1>Log In</h1>
+
+    <p>All fields marked with * are required.</p>
+
+    <form action="" method="post">
+        <fieldset>
+            <table>
+                <tbody>
+                    <tr>
+                        <th align="left"><p>Username *</p></th>
+                        <td><input type="text" name="first" required></td>
+                    </tr>
+
+                    <tr>
+                        <th align="left"><p>Password *</p></th>
+                        <td>
+                          <input type="password" name="password" minlength="6" required>
+                          <small>Password must be a minimum of 6 characters</small>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th><p><a href="password.html">Forgot password?</a></p></th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                          <label>
+                            <input type="checkbox" name="newslatter">
+                            Remember me?
+                          </label>
+                        </td>
+                      </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

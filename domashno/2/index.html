@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Reservation</title>
+</head>
+<body>
+    <h1>Make a Reservation</h1>
+
+    <p>All fields marked with * are required.</p>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th align="left"><p>Full name *</p></th>
+                        <td>
+                          <input type="text" name="first" placeholder="First" required>
+                          <input type="text" name="last" placeholder="Last" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th align="left"><p>Email address *</p></th>
+                        <td><input type="email" name="email" placeholder="email@site.com" required></td>
+                    </tr>
+          
+                    <tr>
+                        <th align="left"><p>Phone Number *</p></th>
+                        <td>
+                          <input type="tel" name="phone" placeholder="### ### ####" required>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Reservation Information</legend>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th align="left"><p>Reservation Date *</p></th>
+                        <td><input type="date" name="date_reservation" placeholder="DD/MM/YYYY" required></td>
+                    </tr>
+
+                    <tr>
+                        <th align="left"><p>Reservation Time *</p></th>
+                        <td><input type="time" name="time_reservation" required></td>
+                    </tr>
+
+                    <tr>
+                        <th align="left"><p>Place *</p></th>
+                        <td>
+                            <select name="place">
+                                <option value="" selected disabled>Select place</option>
+                                <option value="floor1">1st floor</option>
+                                <option value="floor2">2nd floor</option>
+                                <option value="terrace">Terrace</option>
+                              </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th align="left"><p>Table *</p></th>
+                        <td>
+                            <select name="table">
+                                <option value="" selected disabled>Select table</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th align="left"><p>People *</p></th>
+                        <td><input type="number" name="people" placeholder="2" min="2" max="10" step="1"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <p align="center"><button type="submit">Make Reservation</button></p>
+    </form>
+</body>
+</html>
